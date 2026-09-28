@@ -1,3 +1,5 @@
+> Actualización: el proveedor predeterminado es HubSpot. Para conectar el formulario y activar envíos, sigue HUBSPOT.md. Las instrucciones GHL de este documento son alternativas.
+
 # Folia · Marketing Health for Clinics
 
 Landing basada en el frame de Figma `14:181`, con el cuestionario actualizado y recursos locales del diseño.
