@@ -8,8 +8,7 @@ Esta versión sustituye el destino predeterminado GHL por el formulario de HubSp
 2. En Netlify, configurar las variables de entorno para Functions en producción:
    - CRM_PROVIDER = hubspot
    - FOLIA_MODE = live
-   - PRIVACY_URL = URL HTTPS real de la política de privacidad publicada
-   - LEGAL_URL = URL HTTPS real del aviso legal publicado
+   - CALENDAR_URL = enlace HTTPS de tu Calendly para el botón de resultados
 3. Volver a desplegar. Los identificadores de cuenta 149430727 y formulario 97ba49d3-ce4d-4b1a-a503-6674f862e605 ya están incluidos; pueden sobreescribirse con HUBSPOT_PORTAL_ID y HUBSPOT_FORM_ID.
 4. Probar con datos propios y comprobar el envío en HubSpot. Verificar los tres recorridos: desbloquear análisis, solicitar auditoría y contacto directo.
 
@@ -17,7 +16,7 @@ Esta versión sustituye el destino predeterminado GHL por el formulario de HubSp
 
 El formulario publicado debe contener las propiedades de contacto firstname (Nombre), email y phone (Teléfono). El nombre completo se guarda íntegro en firstname para no adivinar apellidos. Si hay otros campos obligatorios o requisitos de consentimiento del formulario, hace falta adaptar el envío antes de activarlo. No se omiten ni se falsifican consentimientos. El código de inserción recibido identifica el formulario, pero no permite verificar su configuración interna.
 
-El modo live conserva la comprobación de URLs legales existente. No usar URLs de ejemplo. Mientras falten estas variables, el envío no se activará correctamente. No se han creado textos legales con datos ficticios.
+Los enlaces de privacidad y aviso legal se han retirado por petición del propietario. Sus variables ya no bloquean el envío. Para activar los envíos es necesario FOLIA_MODE=live. El botón de auditoría de los resultados abre directamente CALENDAR_URL, sin formulario intermedio. Si falta el enlace, aparece deshabilitado con un mensaje explicativo.
 
 ## Respuestas y resultados (opcional)
 
